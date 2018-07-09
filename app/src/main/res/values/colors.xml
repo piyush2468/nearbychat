@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryHOLO">#8803A9F4</color>
+
+    <!--<color name="colorPrimary">#ffF44336</color>
+    <color name="colorPrimaryDark">#aaD32F2F</color>
+    <color name="colorAccent">#aaFFC107</color>
+    <color name="colorPrimaryHOLO">#99F44336</color>-->
+    <color name="color_primary_overlay">#80f50057</color>
+    <color name="light_grey">#cdcecf</color>
+    <color name="color_grey_overlay">#80cdcecf</color>
+    <color name="color_graylight">#eeeeee</color>
+    <color name="color_torquise">#FF59d2d7</color>
+    <color name="color_blue">#FF0091BE</color>
+    <color name="color_black">#FF000000</color>
+    <color name="color_black_new">#333333</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_green">#00FF00</color>
+    <color name="color_green_holo">#FFceedce</color>
+    <color name="color_green_dark">#136106</color>
+    <color name="color_term">#FF0176A1</color>
+    <color name="color_grey">#FFCFCFCF</color>
+    <color name="color_dark_grey">#4d4d4d</color>
+    <color name="color_button_hover">#FFb2dcef</color>
+    <color name="color_title_red">#d82626</color>
+    <color name="color_red_holo">#ffffbcbc</color>
+    <color name="color_title_blue">#026ac7</color>
+    <color name="color_orange">#FFf26522</color>
+    <color name="color_orange_chat">#FFfd8e21</color>
+    <color name="color_orange_story">#FFffd1a3</color>
+    <color name="color_date_message">#FF5c5c5c</color>
+    <color name="color_status_activity">#FF4a4a4a</color>
+    <color name="color_stories_bottom">#FFF8E0C6</color>
+    <color name="color_date_header_chat">#FFEFEFEF</color>
+    <color name="color_light_blue">#59d2d7</color>
+    <color name="color_divider_participant">#4097a7</color>
+    <color name="color_text_participant">#dcfeed</color>
+    <color name="color_input_chat_background">#edf4f7</color>
+    <color name="color_right_chat_background">#0e87ae</color>
+    <color name="color_left_chat_background">#3749b9</color>
+    <color name="color_bg_down">#99CFCFCF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="red_overlay">#99FF0000</color>
+    <color name="black_deselected_image">#99000000</color>
+
+    <color name="tedbottompicker_camera">#000</color>
+    <color name="tedbottompicker_gallery">#ccc</color>
+
+    <color name="colorPurpleLight">#4B5980</color>
+    <color name="colorPurpleDark">#3F4A68</color>
+    <color name="colorTextBlack">#333333</color>
+    <color name="colorTextInfo">#9b9b9b</color>
+    <color name="colorGreen">#A5DE40</color>
+    <color name="navColor">#80FFFFFF</color>
+    <color name="bubble_grey">#E9ECEC</color>
+    <color name="bubble_grey_trans">#15000000</color>
+    <color name="bg_chat">#FFF</color>
+
+    <color name="border">#dedede</color>
+</resources>

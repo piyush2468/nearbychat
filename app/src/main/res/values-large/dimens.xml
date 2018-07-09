@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_participant_size">70dp</dimen>
+    <dimen name="chat_profile_pic_size">55dp</dimen>
+    <dimen name="reply_profile_pic_size">45dp</dimen>
+    <dimen name="replay_close_button_size">18dp</dimen>
+    <dimen name="replay_icon_message_size">17dp</dimen>
+    <dimen name="replay_text_size">11sp</dimen>
+    <dimen name="icon_main_profile">200dp</dimen>
+    <dimen name="icon_room_image">220dp</dimen>
+    <dimen name="size_height_video_preview">240dp</dimen>
+    <dimen name="icon_gallery">85dp</dimen>
+    <dimen name="image_room">60dp</dimen>
+    <dimen name="text_size_float">14sp</dimen>
+    <dimen name="text_size_notification">12sp</dimen>
+    <dimen name="text_member_name">12dp</dimen>
+    <dimen name="size_image_profile_dialog">140dp</dimen>
+    <dimen name="profile_dialog_radius_corner">63dp</dimen>
+    <dimen name="profile_dialog_padding">12dp</dimen>
+    <dimen name="size_logo_bar">55dp</dimen>
+    <dimen name="size_chat_image_height">190dp</dimen>
+    <dimen name="size_chat_image_width">240dp</dimen>
+    <dimen name="emoji_size">30sp</dimen>
+    <dimen name="emoji_size_larger">54sp</dimen>
+    <integer name="camera_image_size">1000</integer>
+
+    <dimen name="h1">20sp</dimen>
+    <dimen name="h2">18sp</dimen>
+    <dimen name="h3">16sp</dimen>
+    <dimen name="h4">14sp</dimen>
+    <dimen name="h5">12sp</dimen>
+    <dimen name="maxwidth">170dp</dimen>
+</resources>

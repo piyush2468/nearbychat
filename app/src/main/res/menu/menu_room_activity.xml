@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_view_online"
+        android:orderInCategory="1"
+        android:title="@string/menu_view_online"
+        android:checkable="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_room_invite"
+        android:orderInCategory="2"
+        android:title="@string/menu_room_invitation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_list_subscribers"
+        android:orderInCategory="3"
+        android:title="@string/menu_list_of_subscriber"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_subscribe"
+        android:checkable="true"
+        android:orderInCategory="4"
+        android:title="@string/menu_subscribe"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_leave"
+        android:orderInCategory="5"
+        android:title="@string/menu_leave"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_list_blocked"
+        android:orderInCategory="6"
+        android:title="@string/menu_blocked_user"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

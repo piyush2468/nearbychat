@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="KEY_PREF_NAME">ChatChat</string>
+    <string name="USER_LOGGED">User.Logged</string>
+    <string name="USER_TOKEN">USER.TOKEN</string>
+    <string name="USER_SINGLE_CHAT_LAST_MESSAGE">USER.SINGLE.CHAT.LAST.MESSAGE.%s</string>
+    <string name="USER_SINGLE_CHAT_COUNT">USER.SINGLE.CHAT.COUNT.%s</string>
+    <string name="USER_LAST_OPEN_TAB">USER_LAST_OPEN_TAB</string>
+    <string name="USER_ROOM_JOIN_MESSAGE">USER.ROOM.JOIN.MESSAGES.%s</string>
+    <string name="USER_ROOM_JOIN_USER_ID">USER.ROOM.JOIN.USER_ID.%s</string>
+    <string name="USER_ROOM_JOIN_COUNT">USER.ROOM.COUNT.%s</string>
+    <string name="USER_ROOM_NEW_INCOMING_MESSAGE">USER.ROOM.NEW_INCOMING.MESSAGES.%s</string>
+    <string name="USER_ROOM_NEW_INCOMING_COUNT">USER.ROOM.NEW_INCOMING.COUNT.%s</string>
+    <string name="USER_ROOM_VIEW_ONLINE">USER.ROOM.VIEW.ONLINE</string>
+    <string name="COUNT_LAST_CHAT">Count.Chat.%s</string>
+</resources>

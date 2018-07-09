@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_myprofile"
+            android:icon="@drawable/ic_profile_prof"
+            android:title="@string/drawer_myprofile" />
+
+        <item
+            android:id="@+id/drawer_friends"
+            android:icon="@drawable/ic_edit_profile"
+            android:title="@string/drawer_settings" />
+
+        <item
+            android:id="@+id/drawer_rate"
+            android:icon="@drawable/icv_rateus"
+            android:title="@string/drawer_rate" />
+
+
+        <item
+            android:id="@+id/drawer_share"
+            android:icon="@drawable/icv_share"
+            android:title="@string/drawer_share" />
+
+        <item
+            android:id="@+id/drawer_contact"
+            android:icon="@drawable/icv_contactus"
+            android:title="@string/drawer_contact" />
+
+        <item
+            android:id="@+id/drawer_more"
+            android:icon="@drawable/icv_moreapps"
+            android:title="@string/drawer_more" />
+        <item
+            android:id="@+id/drawer_setting"
+            android:icon="@drawable/icv_aboutus"
+            android:title="@string/drawer_setting" />
+    </group>
+
+</menu>

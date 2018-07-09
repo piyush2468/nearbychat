@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.rndtechnosoft.fynder.utility.RegularTextView
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+
+        <com.rndtechnosoft.fynder.utility.RegularTextView
+            android:id="@+id/tab_badge"
+            android:layout_width="@dimen/space5"
+            android:layout_height="@dimen/space5"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space5"
+            android:layout_toLeftOf="@+id/tab_title"
+            android:background="@drawable/circle_bg_notification"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

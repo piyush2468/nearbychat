@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "403846639093",
+    "firebase_url": "https://fynder-prod.firebaseio.com",
+    "project_id": "fynder-prod",
+    "storage_bucket": "fynder-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403846639093:android:b9ff346ae2c8bebe",
+        "android_client_info": {
+          "package_name": "com.rndtechnosoft.fynder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403846639093-bn9tvc79dd548s28ndja8dq0konsuemi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rndtechnosoft.fynder",
+            "certificate_hash": "8a8430ddc33cf36cebb107e7f662442466ac225d"
+          }
+        },
+        {
+          "client_id": "403846639093-gramrpdj8rckb66o1tu8t1a75gh7sb3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn4nSWaiFyG1bgXMtP3I7vEBDGDCop4Ss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403846639093-gramrpdj8rckb66o1tu8t1a75gh7sb3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

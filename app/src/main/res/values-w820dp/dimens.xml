@@ -1,0 +1,14 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="size_image_profile_dialog">200dp</dimen>
+    <dimen name="profile_dialog_radius_corner">83dp</dimen>
+    <dimen name="profile_dialog_padding">16dp</dimen>
+    <dimen name="size_logo_bar">75dp</dimen>
+    <dimen name="size_chat_image_height">230dp</dimen>
+    <dimen name="size_chat_image_width">300dp</dimen>
+    <dimen name="emoji_size">36sp</dimen>
+    <dimen name="emoji_size_larger">58sp</dimen>
+</resources>

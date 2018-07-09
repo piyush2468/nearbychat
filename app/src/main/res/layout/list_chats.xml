@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space5"
+        android:paddingBottom="@dimen/space5"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_profile"
+            android:layout_width="@dimen/icon_participant_size"
+            android:layout_height="@dimen/icon_participant_size"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/text_date_last_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/text_size_float" />
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/text_display_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/text_date_last_msg"
+                    android:maxLines="1"
+                    android:textColor="@color/color_black"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/text_count_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space5"
+                    android:background="@drawable/circle_orange"
+                    android:minHeight="@dimen/space15"
+                    android:minWidth="@dimen/space15"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:gravity=""
+                    android:paddingTop="1dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_notification"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/space5"
+                    android:layout_toLeftOf="@id/text_count_notification"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_tick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/tick_single"
+                        android:tint="@color/color_blue" />
+
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/text_last_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/space5"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/color_right_chat_background"
+                        app:emojiSize="@dimen/replay_icon_message_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/root_layout"
+        android:background="@color/colorPrimary" />
+</RelativeLayout>

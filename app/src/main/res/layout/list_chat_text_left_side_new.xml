@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/spaceLR"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/space10"
+    android:paddingRight="@dimen/space10"
+    android:paddingTop="@dimen/space10">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/left_profile_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginRight="@dimen/space10"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/left_text_time"
+            android:orientation="vertical">
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/left_display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:maxWidth="@dimen/maxwidth"
+                android:text="Ravi Shah"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/bubble_grey"
+                android:textSize="@dimen/h5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chat_left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/left_reply_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp">
+
+                </LinearLayout>
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:background="@drawable/bg_chat_left"
+                    android:gravity="left"
+                    android:maxWidth="@dimen/maxwidth"
+                    android:padding="@dimen/space10"
+                    android:text="Hi, joe how are you, do you like to join our party in next week because you don't like party?"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/h3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.rndtechnosoft.fynder.utility.RegularTextView
+            android:id="@+id/left_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right|bottom"
+            android:padding="@dimen/space5"
+            android:text="5:04 pm"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorTextInfo"
+            android:textSize="@dimen/h5" />
+    </LinearLayout>
+</RelativeLayout>

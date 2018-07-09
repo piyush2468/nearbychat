@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+    <com.rndtechnosoft.fynder.utility.RegularTextView
+        android:id="@+id/button_login_with_yipchat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/rounded_yipchat_login_button"
+        android:text="@string/random_chat"
+        android:textColor="@color/color_white"
+        android:layout_alignLeft="@+id/button_icon_gplus"
+        android:layout_alignRight="@+id/button_icon_gplus"
+        android:layout_below="@+id/button_icon_gplus"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        />
+
+    <com.rndtechnosoft.fynder.utility.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/button_cancel"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:layout_alignLeft="@+id/button_login_with_yipchat"
+        android:layout_alignRight="@+id/button_login_with_yipchat"
+        android:layout_below="@+id/button_login_with_yipchat"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1031987690211",
+    "firebase_url": "https://nearbychat-5450a.firebaseio.com",
+    "project_id": "nearbychat-5450a",
+    "storage_bucket": "nearbychat-5450a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031987690211:android:b9ff346ae2c8bebe",
+        "android_client_info": {
+          "package_name": "com.rndtechnosoft.fynder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031987690211-bafc28v9ri2imaj5g6fvjtt0nh55p3uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeJcp2bGXT-ROmONnayvonSMnUZZjc_vQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

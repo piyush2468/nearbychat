@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipChildren="false">
+
+    <View
+        android:id="@+id/up_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/up_spacing"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:clipChildren="false"
+        app:cardCornerRadius="@dimen/space5"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false">
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:text="@string/close"
+                android:visibility="invisible"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/close_button"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/profile_dialog_padding">
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/text_display_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="Ravi Shah"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Friends"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_layout"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/button_invite_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_invite"
+                        android:layout_width="@dimen/spaceLR"
+                        android:layout_height="@dimen/spaceLR"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_profile_add"
+                        android:tint="@color/colorPrimary"
+                        android:gravity="center_horizontal" />
+
+                    <com.rndtechnosoft.fynder.utility.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/add_friend" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_chat_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_chat"
+                        android:layout_width="@dimen/spaceLR"
+                        android:layout_height="@dimen/spaceLR"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_profile_chat"
+                        android:tint="@color/colorPrimary"
+                        android:gravity="center_horizontal" />
+
+                    <com.rndtechnosoft.fynder.utility.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/chat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_block_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_block"
+                        android:layout_width="@dimen/spaceLR"
+                        android:layout_height="@dimen/spaceLR"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_profile_block"
+                        android:tint="@color/colorPrimary"
+                        android:gravity="center_horizontal" />
+
+                    <com.rndtechnosoft.fynder.utility.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/block" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_home_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_home"
+                        android:layout_width="@dimen/spaceLR"
+                        android:layout_height="@dimen/spaceLR"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_profile_prof"
+                        android:tint="@color/colorPrimary"
+                        android:gravity="center_horizontal" />
+
+                    <com.rndtechnosoft.fynder.utility.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/home" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/up_spacing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/profile_dialog_radius_corner"
+        app:cardPreventCornerOverlap="false">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/size_image_profile_dialog"
+            android:layout_height="@dimen/size_image_profile_dialog" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

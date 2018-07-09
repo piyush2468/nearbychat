@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onboardingRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- BG COLORS CONTAINER -->
+    <FrameLayout
+        android:id="@+id/onboardingBackgroundContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- MAIN LAYOUT SECTION -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:animateLayoutChanges="true"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <!-- ICON CONTAINER -->
+            <FrameLayout
+                android:id="@+id/onboardingContentIconContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+            <!-- TEXT CONTAINER -->
+            <FrameLayout
+                android:id="@+id/onboardingContentTextContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- PAGER ICONS CONTAINER -->
+    <LinearLayout
+        android:id="@+id/onboardingPagerIconsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/bottom_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/bottom_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space15"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_white"
+            android:background="@drawable/ic_ob_facebook"
+            android:onClick="facebookClicked"
+            android:text="FACEBOOK" />
+
+        <Button
+            android:id="@+id/button_icon_gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space5"
+            android:textColor="@color/color_white"
+            android:layout_weight="1"
+            android:background="@drawable/ic_ob_facebook"
+            android:onClick="googlePlusClicked"
+            android:text="GOOGLE" />
+
+
+    </LinearLayout>
+
+    <com.rndtechnosoft.fynder.utility.RegularTextView
+        android:id="@+id/other_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:padding="15dp"
+        android:text="@string/other_options"
+        android:textColor="@color/color_white"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

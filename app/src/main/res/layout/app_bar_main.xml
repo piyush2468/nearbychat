@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.rndtechnosoft.fynder.activity.NearbyHomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/color_white"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/adView"
+            android:layout_height="match_parent" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/admob_banner" />
+
+    </RelativeLayout>
+
+    <!--INCOMING NEW MESSAGE ANIMATION-->
+    <RelativeLayout
+        android:id="@+id/layout_new_message"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/floating_chatroom_selector"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/image_new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_chat_white" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/icon_new_message"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:alpha="0.8" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/icon_new_message"
+            android:layout_toRightOf="@id/image_new_message"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--END INCOMING NEW MESSAGE ANIMATION-->
+
+    <LinearLayout
+        android:id="@+id/layout_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:background="@color/bg_chat"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_double_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/icon_double_down"
+                    android:layout_width="@dimen/chat_profile_pic_size"
+                    android:layout_height="@dimen/chat_profile_pic_size"
+                    android:background="@drawable/circle_bg_double_down"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_double_down"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_badge_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_toRightOf="@id/layout_double_down"
+                android:background="@drawable/circle_red"
+                android:padding="3dp"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_notification"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <!--INPUT CHAT-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space15"
+            android:layout_marginBottom="@dimen/space5"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_marginRight="@dimen/space10"
+            android:background="@drawable/bg_chat_input">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/input_reply_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/button_send_text_or_audio_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/button_add_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:paddingLeft="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:tint="@color/colorAccent" />
+
+                        <ImageButton
+                            android:id="@+id/button_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:paddingLeft="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_send"
+                            android:tint="@color/colorAccent"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/button_audio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:paddingLeft="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_mic"
+                            android:tint="@color/colorAccent" />
+                    </LinearLayout>
+
+
+                    <ImageButton
+                        android:id="@+id/button_smiley"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_smiley"
+                        android:tint="@color/colorAccent" />
+
+                    <com.vanniktech.emoji.EmojiEditText
+                        android:id="@+id/input_text_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:inputType="text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/button_send_text_or_audio_layout"
+                        android:layout_toRightOf="@id/button_smiley"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_chat"
+                        android:isScrollContainer="true"
+                        android:maxLines="6"
+                        android:textColorHint="@color/color_grey"
+                        app:emojiSize="@dimen/emoji_size" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

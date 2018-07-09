@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/list_selector_background">
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/textLargeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/textMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online"
+                android:textColor="@color/color_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="@dimen/space20"/>
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_float" />
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="@dimen/text_size_notification" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space5"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_profile"
+                    android:layout_width="@dimen/image_room"
+                    android:layout_height="@dimen/image_room"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/my_room_text"
+                    android:layout_width="@dimen/image_room"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_profile"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_gradient_trans"
+                    android:gravity="center_horizontal"
+                    android:text="@string/my_room"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_float" />
+
+            </RelativeLayout>
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/space5"
+                android:maxLines="1"
+                android:text="5.5 km"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/root_layout"
+        android:background="@color/colorPrimary" />
+</RelativeLayout>

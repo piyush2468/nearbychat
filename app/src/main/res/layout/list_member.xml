@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/icon_gallery"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/icon_gallery"
+        android:layout_height="@dimen/icon_gallery"
+        android:layout_gravity="center"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <com.rndtechnosoft.fynder.utility.RegularTextView
+            android:id="@+id/text_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#604d4d4d"
+            android:gravity="center_horizontal"
+            android:text="@string/host"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_member_name"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <com.rndtechnosoft.fynder.utility.RegularTextView
+        android:id="@+id/text_member_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="@dimen/text_member_name"
+        android:textColor="@color/color_black"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        />
+</LinearLayout>

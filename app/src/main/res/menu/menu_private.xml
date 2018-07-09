@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_invitation_list"
+        android:title="@string/invitation_list"
+        android:orderInCategory="1"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu_pending"
+        android:title="@string/pending_acceptance"
+        android:orderInCategory="2"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_decline"
+        android:title="@string/declined"
+        android:orderInCategory="3"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_block"
+        android:title="@string/blocked"
+        android:orderInCategory="4"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_friend_list"
+        android:title="@string/friend_list"
+        android:icon="@drawable/ic_profile_chat"
+        android:orderInCategory="5"
+        android:visible="false"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

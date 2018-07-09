@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.rndtechnosoft.fynder.utility.image.bottompicker.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ccc"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:matchHeightToWidth="true"
+
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="@dimen/icon_room_image"
+        android:layout_height="@dimen/icon_room_image"
+        android:layout_gravity="center"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play_video"
+            android:tint="@color/color_white" />
+    </RelativeLayout>
+
+</com.rndtechnosoft.fynder.utility.image.bottompicker.view.SquareFrameLayout>

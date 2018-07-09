@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rndtechnosoft.fynder.activity.NearbyHomeActivity">
+    <!--<item-->
+        <!--android:id="@+id/action_create_room_category"-->
+        <!--android:title="@string/action_create_room_category"-->
+        <!--app:showAsAction="never"-->
+        <!--/>-->
+    <item
+        android:id="@+id/action_participant"
+        android:title="@string/action_participant"
+        android:icon="@drawable/ic_online_users"
+        android:actionLayout="@layout/action_refresh"
+        app:showAsAction="ifRoom"
+        />
+</menu>

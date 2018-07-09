@@ -1,0 +1,457 @@
+<resources>
+    <string name="app_name">Fynder</string>
+
+    <!-- Strings related to login -->
+    <string name="login_with">Sign in or register with:</string>
+    <string name="login">Sign in</string>
+    <string name="prompt_email">Email :</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_about">About</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_name_too_low">Your name is too low</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="login_request_register">Do not have an account?</string>
+    <string name="login_register_here">Register here</string>
+    <string name="login_progress_google">Connecting to Google..</string>
+    <string name="login_progress_facebook">Connecting to Facebook..</string>
+    <string name="login_progress_twitter">Connecting to Twitter..</string>
+    <string name="login_failed_google">Sorry, Sign in with Google has failed</string>
+    <string name="login_failed_facebook">Sorry, Sign in with Facebook has failed</string>
+    <string name="login_failed">Sorry, Sign in has failed</string>
+    <string name="login_banned">Sorry %1$s, your account has blocked.</string>
+    <string name="login_error_verification">The email has already registered or your account has banned</string>
+    <string name="prompt_display_name">Display Name</string>
+    <string name="action_register">Register</string>
+    <string name="action_confirmation">Confirmation</string>
+    <string name="login_required">You need to login first, and try again.</string>
+    <string name="other_options">Skip</string>
+    <string name="login_with_yipchat">Login with Fynder</string>
+    <string-array name="login_introduction">
+        <item>Communication with thousands of people around the world, over global Chat Room.</item>
+        <item>Meet the online users available around you.</item>
+        <item>Upload more profile pictures, to let them see your cool things.</item>
+        <item>Send text / emoji / picture / audio / video file over chat</item>
+        <item>Make the private messages, with new friends.</item>
+        <item>Enjoy the real time conversation using Firebase Technology</item>
+    </string-array>
+    <string name="image_profile_mandatory">Please upload a profile picture. The other hotties would like to see you!</string>
+    <string name="error_no_gender">Please select your gender</string>
+    <string name="error_no_birthday_title">Please select your birthday</string>
+    <string name="error_no_birthday_message">To tell us how old are you?, because this app doesn\'t allow the under age users enter it.</string>
+    <string name="error_unchecked_agreements">Please read and agreed to terms and conditions</string>
+    <string name="error_under_age">You must be at least 13 years old.</string>
+    <string name="error_too_old_age">You must be under 100 years old.</string>
+    <string name="term_and_condition">I have agreed to&#160;</string>
+    <string name="term_and_condition_clickable">the terms and conditions</string>
+    <string name="about_our_services">About our services</string>
+    <string name="registration">Registration.</string>
+    <string name="registration_msg">You must register for our Services using accurate data, provide your name, email address, profile picture, and gender to register for our Services.</string>
+    <string name="age">Age.</string>
+    <string name="agee">Age </string>
+    <string name="age_msg">You must be at least 13 years old to use our Services (or such greater age required in your country for you to be authorized to use our Services without parental approval). In addition to being of the minimum required age to use our Services under applicable law, if you are not old enough to have authority to agree to our Terms in your country, your parent or guardian must agree to our Terms on your behalf.</string>
+    <string name="device_and_software">Devices and Software.</string>
+    <string name="device_and_software_msg">You must provide certain devices, software, and data connections to use our Services, which we otherwise do not supply. For as long as you use our Services, you consent to downloading and installing updates to our Services, including automatically.</string>
+    <string name="privacy_and_policy">Privacy policy and user data</string>
+    <string name="privacy_msg">You share your information as you use and communicate through our Services, and we share your information to help us operate, provide, improve, understand, customize, support, and market our Services.</string>
+    <string name="account_information">Account Information.</string>
+    <string name="account_information_msg">Your profile name and photo, online status and status message, last seen status, and receipts may be available to anyone who uses our Services, although you can configure your Services settings to manage certain information available to other users</string>
+    <string name="contacts_and_order">Your Contacts and Others. </string>
+    <string name="contacts_msg">Users with whom you communicate may store or reshare your information (including your email address or messages) with others on and off our Services. You can use your Services settings and the block feature in our Services to manage the users of our Services with whom you communicate and certain information you share.</string>
+    <string name="third_party">Third-Party Services.</string>
+    <string name="third_party_msg">When you use third-party services that are integrated with our Services such as Facebook or Google,we will receive information about your profile name, email, profile picture and birthday</string>
+    <string name="prohibited">Prohibited content</string>
+    <string name="prohibited_msg">In cases when you upload porn picture files for profile or message, or saying bad words, you will be banned from Fynder and we have right to remove your prohibited content.</string>
+    <!--End Login-->
+
+    <!--DATE-->
+    <string name="yesterday">YESTERDAY</string>
+    <string name="today">TODAY</string>
+    <!--End Date-->
+
+    <!--ABOUT-->
+    <string name="about_share">Share</string>
+    <string name="about_rating">Give us a rating</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_contact_us">Contact us</string>
+    <string-array name="about_email_to">
+        <item>rndtechnosoft@gmail.com</item>
+    </string-array>
+    <string name="about_share_title">Share to..</string>
+    <string name="about_share_message">Recommend Fynder.Meet thousands of people around the world, over global Chat Room. . Url: https://play.google.com/store/apps/details?id=com.rndtechnosoft.Fynder</string>
+    <string name="about_email_title">Send mail using..</string>
+    <string name="about_email_subject">Contact us from Fynder app</string>
+    <!--End ABOUT-->
+
+    <!--PROFILE-->
+    <string name="last_online">Login Status : </string>
+    <string name="attention">Attention</string>
+    <string name="online_users">Online users</string>
+    <string name="basic_info">BASIC INFO</string>
+    <string name="you">You</string>
+    <string name="gallery">Gallery</string>
+    <string name="home">Profile</string>
+    <string name="block">Block</string>
+    <string name="chat">Chat</string>
+    <string name="add_friend">Add friend</string>
+    <string name="ready_to_invite">Ready to invite</string>
+    <string name="text_my_friend">My friend</string>
+    <string name="text_its_me">It\'s me</string>
+    <string name="alert_waiting_invitation">Waiting for accept</string>
+    <string name="alert_pending_invitation">You have a pending the invitation from this user.</string>
+    <string name="alert_declined_invitation">This user has decline your invitation.</string>
+    <string name="alert_declined_by_me">You have declined the invitation from this user.</string>
+    <string name="alert_block_user">Sorry, you have not permission to contact this user</string>
+    <string name="alert_block_by_me">This user had blocked by you</string>
+    <string name="message_dialog_pending">You want to accept this invitation?</string>
+    <string name="message_dialog_decline">Are you sure? you want decline this user?</string>
+    <string name="message_dialog_un_block">Are you sure? now you open for this user to be your friend?</string>
+    <string name="message_dialog_block">Are you sure you want to block this user?</string>
+    <string name="toast_now_friend">Now, we are friend..</string>
+    <string name="option_camera">Camera</string>
+    <string name="option_gallery">Choose existing image</string>
+    <string name="option_remove">Remove image</string>
+    <string name="option_set_main">Set main image</string>
+    <string name="option_view">View image</string>
+    <string name="title_decline">Decline</string>
+    <string name="title_invitation">Sent invitation</string>
+    <string name="title_select_image">Select an image</string>
+    <string name="title_add_image">Add an image</string>
+    <string name="title_delete_image">Delete an image</string>
+    <string name="title_block">Block</string>
+    <string name="text_blocked">Blocked</string>
+    <string name="message_decline">Are you sure you want to decline this invitation ??</string>
+    <string name="message_block">Are you sure you want to block this user ??</string>
+    <string name="message_dialog_image">Are you sure? to delete this image?</string>
+    <string name="message_sent_invitation">You want to send the friend invitation</string>
+    <string name="uploading_image">Uploading image..</string>
+    <string name="main_image">MAIN</string>
+    <string name="edit">Edit</string>
+    <string name="Name">Name :</string>
+    <string name="birthday">Date of Birth : </string>
+    <string name="action_block">Block this user</string>
+    <string name="action_logout">Logout</string>
+    <string name="friend_information">Friend Information</string>
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="error_downloading_image">Error while downloading image</string>
+    <!--END PROFILE-->
+
+    <!--ROOM-->
+    <string name="global_room">Global Room</string>
+    <string name="global_room_desc">All participants can see it</string>
+    <string name="hint_create_category_room">Category room name</string>
+    <string name="hint_description">Description</string>
+    <string name="error_send_text_message">Sorry, you cannot send the message at the moment.</string>
+    <string name="room_name">Room name</string>
+    <string name="room_description">Room description</string>
+    <string name="my_room">My Room</string>
+    <string name="add_room">Add room</string>
+    <string name="edit_room">Edit room</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="hint_input_room_name">Room name</string>
+    <string name="hint_input_room_description">Room description</string>
+    <string name="title_create_room">Create room</string>
+    <string name="message_create_room">Please fill a name and description for your room.</string>
+    <string name="create">Create</string>
+    <string name="online">Online</string>
+    <string name="host">HOST</string>
+    <string name="alert_fill_name">Please fill the room name</string>
+    <string name="state_joined">has joined</string>
+    <string name="state_left">has left</string>
+    <string name="state_kick_out">has kicked out by host</string>
+    <string name="alert_for_blocked_user">You are not allow to enter this room</string>
+    <string name="alert_you_kicked">You have kicked out by host</string>
+    <string name="msg_block_user_from_room">Are you sure to block this user from your room? It does not mean to block this user to send you a private message.</string>
+    <string name="title_block_user_from_room">Block user from my room</string>
+    <string name="title_dialog_block_user">Blocked users: %d</string>
+    <string name="title_dialog_subscriber_user">Subscriber users: %d</string>
+    <string name="title_dialog_friends">ROOM INVITATION\nFriends: %d</string>
+    <string name="title_dialog_room_invitations">ROOM INVITATION\nCount: %d</string>
+    <string name="menu_leave">Leave room</string>
+    <string name="menu_subscribe">Subscribe it</string>
+    <string name="menu_blocked_user">Blocked users</string>
+    <string name="menu_list_of_subscriber">Subscriber users</string>
+    <string name="menu_room_invitation">Invite friends</string>
+    <string name="menu_view_online">View online users</string>
+    <string name="room_invitation">Room Invitation</string>
+    <string name="room_invitation_msg">%1$s want you to join %2$s room</string>
+    <string name="alert_invited_no_name">This user had invited already</string>
+    <string name="alert_invited_with_name">This user had invited already by %s</string>
+    <string name="alert_subscribed">This user had subscribed this room already</string>
+    <string name="message_room_invitation">%s will receive your invitation to join this room.</string>
+    <string name="text_list_blocked_users">Blocked users for my room</string>
+    <string name="title_unblock">Unblock %s</string>
+    <string name="room_setting">Room settings</string>
+    <string name="room_display">Room details</string>
+    <string name="message_unblock">Do you want to allow this user to enter your room again?</string>
+    <string name="subscriber_active">You will receive notification about: joining or messaging user activity</string>
+    <string name="subscriber_inactive">You will no longer receive notification about: joining or messaging user activity</string>
+    <string name="subscriber_title">Subscribe this room</string>
+    <string name="subscriber_option">Subscriber Option</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="unsubscriber_title">Unsubscribe this room</string>
+    <string name="unsubscriber_message">Are you sure to unsubcribe this user?</string>
+    <string name="subscriber_error_active">Error subscribe this room</string>
+    <string name="subscriber_error_inactive">Error unsubscribe this room</string>
+    <string name="time_subscriber">Subscribed at: %s</string>
+    <string name="option_view_user">View User</string>
+    <string name="option_un_subscribe">Unsubscribe User</string>
+    <string name="invited_message">Needs you to join and subscribe this awesome room.</string>
+    <string name="ignore">IGNORE</string>
+    <string name="subscribe_it">SUBSCRIBE IT</string>
+    <string name="room_invitations">Received room invitations</string>
+    <string name="invited_by">Invited by: %s</string>
+    <string name="caution_image_room">When the room image does not provided. so it will display your main image profile.</string>
+    <string name="error_empty_room_name">Please fill the room name</string>
+    <!--END ROOM-->
+
+    <!--SETTING-->
+    <string name="first_open">First open tab</string>
+    <string-array name="first_open_chooser">
+        <item>Last opened tab</item>
+        <item>Global</item>
+        <item>Room</item>
+        <item>Private</item>
+    </string-array>
+    <!--END SETTING-->
+    <!--PRIVATE-->
+    <string name="get_invitation">(%d pending)</string>
+    <string name="text_invitation">Received invitations</string>
+    <string name="friend_list">Friends</string>
+    <string name="invitation_list">Invitations</string>
+    <string name="pending_acceptance">Pending acceptance</string>
+    <string name="declined">Declined contacts</string>
+    <string name="blocked">Blocked contacts</string>
+    <string name="time_blocked">Blocked at: %s</string>
+    <string name="time_declined">Decline at: %s</string>
+    <string name="time_pending_invite">Pending at: %s</string>
+    <string name="time_receive_invite">Received at: %s</string>
+    <string name="time_friend">Friend since: %s</string>
+    <string name="time_last_online">Last online at: %s</string>
+    <string name="no_friend">You have no friend available</string>
+    <string name="no_invitation">You have no invitation available</string>
+    <string name="no_pending">There is no pending request friend</string>
+    <string name="no_blocked">There is no blocked contact</string>
+    <string name="no_declined">There is no declined contact</string>
+    <string name="unread_message_only_one">1 UNREAD MESSAGE</string>
+    <string name="unread_message">%d UNREAD MESSAGES</string>
+    <string name="text_yesterday">Yesterday</string>
+    <string name="alert_block_friend">You have got blocked by this user</string>
+    <string name="private_message">Private message</string>
+    <string name="no_friend_title">Find a new friend</string>
+    <string name="no_friend_message">Currently, you have no friend available, but don\'t worry you will get a new friend here.</string>
+    <string name="no_friend_button">Find Now</string>
+    <string name="share_titlw">Share with friend</string>
+    <string name="share">Share Now</string>
+    <string name="not_now">Not Now</string>
+    <string name="start_conversation">Start a conversation</string>
+    <!--END PRIVATE-->
+
+    <!--NOTIFICATION-->
+    <string name="new_messages">%d New messages</string>
+    <string name="new_invitation">Received invitation</string>
+    <string name="invitation_accepted">Accept your invitation</string>
+    <string name="invitation_declined">Declined your invitation</string>
+    <string name="invitation_blocked">Blocked your invitation</string>
+    <string name="new_participants_join">%d participants have joined room</string>
+    <string name="participant_join">%s has joined room</string>
+    <!--END NOTIFICATION-->
+
+    <!--CAMERA-->
+    <string name="camera_alert">Device has only one camera!</string>
+    <string name="switch_cam">Switch Camera</string>
+    <string name="capture">Capture</string>
+    <string name="alert_error_flash">Cannot turn on flash during on front facing camera mode</string>
+    <string name="alert_error_flash_not_found">No flash available</string>
+    <string name="alert_front_camera_undetected">Sorry, cannot detect the front camera</string>
+    <string name="error_camera">There is wrong with camera module, please restart your device and try again.</string>
+    <!--END CAMERA-->
+
+    <!--AUDIO-->
+    <string name="audio_recording">Hold to record, release to send</string>
+    <string name="audio_uploading">Uploading audio..</string>
+    <string name="audio_error_start">Sorry, error start the audio recorder.</string>
+    <string name="audio_send">Send an audio</string>
+    <string name="audio_required_wait">please try again, after the current playing has finished</string>
+    <!--END AUDIO-->
+
+    <!--VIDEO-->
+    <string name="video_detail_title">Video file information</string>
+    <string name="video_player_title">Fynder TV</string>
+    <string name="file_size">File size: </string>
+    <string name="file_path_location">File path location: </string>
+    <string name="send_a_video">Send a video</string>
+    <string name="upload">Upload</string>
+    <string name="uploading">Uploading..</string>
+    <string name="uploading_video">Uploading video..</string>
+    <string name="error_uploading_video">Sorry, error upload the image, please try again later</string>
+    <string name="error_while_opening_video">Ops, error while opening this video.</string>
+    <string name="error_downloading_video">Sorry, error during download the video</string>
+    <!--END VIDEO-->
+
+    <string name="loading_title">Busy</string>
+    <string name="finding_friends">Finding friends..</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="loading_message">Please wait..</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_reply">Reply</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_copy">Copy</string>
+    <string name="send_an_image">Send an image</string>
+    <string name="error_send_image">Error, while sending the image</string>
+    <string name="error_upload_image">Sorry, error while uploading image..</string>
+    <string name="action_create_room_category">Create Category Room</string>
+    <string name="action_participant">Participant</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_create_category_room">Create Category Room</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hint_chat">Say something..</string>
+    <string name="title_activity_profile">User Profile</string>
+    <string name="error_internet">Problem internet connection, please try again later.</string>
+    <string name="general_error">General error, please try again later.</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="save">SAVE</string>
+    <string name="done">done</string>
+    <string name="crop">crop</string>
+    <string name="next">Next</string>
+    <string name="retake">Retake</string>
+    <string name="local_device">Local device</string>
+    <string name="profile_pictures">Profile pictures</string>
+    <string name="title_activity_profile_edit">Edit Profile</string>
+    <string name="title_activity_room">Chat Room</string>
+    <string name="title_activity_contact">Contacts</string>
+    <string name="title_activity_find_friends">Find friends</string>
+    <string name="copy_message">You have copied the message</string>
+    <string name="photo">Photo</string>
+    <string name="reply_video_with_duration">Video (%s)</string>
+    <string name="reply_video">Video</string>
+    <string name="reply_audio_with_duration">Audio message (%s)</string>
+    <string name="reply_audio">Audio message</string>
+
+    <string name="title_activity_full_image">Image</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_single_chat">Chat</string>
+    <string name="tedbottompicker_title">Select Image</string>
+    <string name="title_activity_send_image">Send To..</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender : </string>
+    <string name="action_share_image">Share image</string>
+    <string name="images">Images</string>
+
+
+    <string name="placeholder_password">Password</string>
+    <string name="placeholder_login">Username</string>
+    <string name="placeholder_fullname">Full Name</string>
+    <string name="placeholder_location">Location</string>
+    <string name="placeholder_facebook_page">Facebook page</string>
+    <string name="placeholder_instagram_page">Instagram page</string>
+    <string name="placeholder_staus">Status</string>
+    <string name="placeholder_email">Email</string>
+    <string name="placeholder_subject">Subject</string>
+    <string name="placeholder_support_detail">What are you contacting us about?</string>
+    <string name="placeholder_current_password">Current password</string>
+    <string name="placeholder_new_password">New password</string>
+    <string name="placeholder_item_category">Category</string>
+    <string name="placeholder_item_title">Title</string>
+    <string name="placeholder_item_login">Username, email or phone</string>
+    <string name="placeholder_item_passw">Password</string>
+    <string name="placeholder_item_url">Web site</string>
+    <string name="placeholder_item_description">Description</string>
+    <string name="placeholder_photo">Comment to photo&#8230;</string>
+    <string name="placeholder_gift">Comment to gift&#8230;</string>
+    <string name="placeholder_search">Search</string>
+    <string name="placeholder_comment">Type a comment&#8230;</string>
+    <string name="placeholder_message">Type a message&#8230;</string>
+    <string name="placeholder_youlike">Interested in </string>
+    <string name="placeholder_lookingfor">Looking for : </string>
+    <string name="placeholder_alcoholviews">Alcohol Views</string>
+    <string name="placeholder_smokeview">Smoking Views</string>
+    <string name="placeholder_relationstaus">Relationship status</string>
+    <string name="placeholder_birthday">Birthday</string>
+
+    <string name="label_gender_select_title">Choose gender</string>
+    <string name="label_age">Age</string>
+    <string name="label_sex">Gender</string>
+    <string name="label_male">Male</string>
+    <string name="label_female">Female</string>
+    <string name="label_sex_undefined">Gender Not Set</string>
+    <string name="label_sex_male">Male</string>
+    <string name="label_sex_female">Female</string>
+
+
+    <string name="relationship_status_0">Not specified</string>
+    <string name="relationship_status_1">Single</string>
+    <string name="relationship_status_2">In a relationship</string>
+    <string name="relationship_status_3">Engaged</string>
+    <string name="relationship_status_4">Married</string>
+    <string name="relationship_status_5">In love</string>
+    <string name="relationship_status_6">It\'s complicated</string>
+    <string name="relationship_status_7">Actively searching</string>
+
+    <string name="you_looking_0">Not specified</string>
+    <string name="you_looking_1">Friendship</string>
+    <string name="you_looking_2">Relationship</string>
+    <string name="you_looking_3">Flirting</string>
+
+    <string name="you_like_0">Not specified</string>
+    <string name="you_like_1">I\'m interested in </string>
+    <string name="you_like_2">I\'m interested in </string>
+
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="account_relationship_status">Relationship status : </string>
+    <string name="account_you_looking">What are you looking for?</string>
+    <string name="account_you_like">Which gender do you like?</string>
+    <string name="interestedIn">Interested in : </string>
+    <string name="random_chat">Random Chat</string>
+    <string name="title_location_permission">Location Permission</string>
+    <string name="text_location_permission">Enable GPS to increase range of search?</string>
+    <string name="ok">Ok</string>
+
+    <string name="drawer_myprofile">My Profile</string>
+    <string name="drawer_friends">Friends</string>
+    <string name="drawer_rate">Rate Us</string>
+    <string name="drawer_more">More Apps</string>
+    <string name="drawer_setting">About Us</string>
+    <string name="drawer_share">Share App</string>
+    <string name="drawer_contact">Contact Us</string>
+    <string name="app_email">rndtechnosoft@gmail.com</string>
+    <string name="more_app">https://play.google.com/store/search?q=rndtechnosoft</string>
+    <string name="close">CLOSE</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="action_edit">Edit Profile</string>
+
+    <string name="admob_banner">ca-app-pub-2813042773590989/8924912158</string>
+    <string name="admob_medium_banner">ca-app-pub-2813042773590989/1262044554</string>
+    <string name="admob_interstitial">ca-app-pub-2813042773590989/1401645358</string>
+    <string name="admob_video">ca-app-pub-2813042773590989/2878378551</string>
+    <string name="admob_native_big">ca-app-pub-2813042773590989/7308578153</string>
+    <string name="admob_native_medium">ca-app-pub-2813042773590989/5831844954</string>
+    <string name="admob_native_small">ca-app-pub-2813042773590989/4355111757</string>
+</resources>

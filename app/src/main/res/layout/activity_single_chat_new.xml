@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.SingleChatActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_bar_selector"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:visibility="visible"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <LinearLayout
+                android:id="@+id/profile_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_bar_selector"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_logo"
+                    android:layout_width="@dimen/size_logo_bar"
+                    android:layout_height="@dimen/size_logo_bar"
+                    android:layout_marginRight="5dp" />
+
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/text_title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:maxLines="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--INCOMING NEW MESSAGE ANIMATION-->
+    <RelativeLayout
+        android:id="@+id/layout_new_message"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/floating_chatroom_selector"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/image_new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_chat_white" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/icon_new_message"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:alpha="0.8" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/icon_new_message"
+            android:layout_toRightOf="@id/image_new_message"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--END NCOMING NEW MESSAGE ANIMATION-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_input_text"
+            android:paddingBottom="@dimen/space5"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_input_text"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_double_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/icon_double_down"
+                    android:layout_width="@dimen/replay_profile_pic_size"
+                    android:layout_height="@dimen/replay_profile_pic_size"
+                    android:background="@drawable/circle_bg_double_down"
+                    android:padding="10dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_double_down"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/text_badge_count"
+                android:layout_width="@dimen/space20"
+                android:layout_height="@dimen/space20"
+                android:layout_marginLeft="-15dp"
+                android:layout_toRightOf="@id/layout_double_down"
+                android:background="@drawable/circle_red"
+                android:gravity="center"
+                android:text="1"
+                android:padding="1dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_notification"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_chat"
+            android:orientation="vertical">
+            <!--INPUT CHAT-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space5"
+                android:layout_marginLeft="@dimen/space10"
+                android:layout_marginRight="@dimen/space10"
+                android:background="@drawable/bg_chat_input"
+                android:padding="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/input_reply_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/button_send_text_or_audio_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/button_add_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:background="@null"
+                                android:paddingLeft="10dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_add_black_24dp"
+                                android:tint="@color/colorAccent" />
+
+                            <ImageButton
+                                android:id="@+id/button_send"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:background="@null"
+                                android:paddingLeft="10dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_send"
+                                android:tint="@color/colorAccent"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/button_audio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:background="@null"
+                                android:paddingLeft="10dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_mic"
+                                android:tint="@color/colorAccent" />
+                        </LinearLayout>
+
+
+                        <ImageButton
+                            android:id="@+id/button_smiley"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_smiley"
+                            android:tint="@color/colorAccent" />
+
+                        <com.vanniktech.emoji.EmojiEditText
+                            android:id="@+id/input_text_chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@id/button_send_text_or_audio_layout"
+                            android:layout_toRightOf="@id/button_smiley"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/hint_chat"
+                            android:inputType="text"
+                            android:isScrollContainer="true"
+                            android:maxLines="6"
+                            android:textColorHint="@color/colorTextInfo"
+                            app:emojiSize="@dimen/emoji_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

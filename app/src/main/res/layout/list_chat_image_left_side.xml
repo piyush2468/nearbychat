@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/left_profile_pic"
+            android:layout_width="@dimen/chat_profile_pic_size"
+            android:layout_height="@dimen/chat_profile_pic_size"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <com.rndtechnosoft.fynder.utility.RegularTextView
+                android:id="@+id/left_display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:maxLines="1"
+                android:textSize="@dimen/h5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/left_image_low_res"
+                        android:layout_width="@dimen/size_chat_image_width"
+                        android:layout_height="@dimen/size_chat_image_height"
+                        android:scaleType="centerCrop" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/left_image_high_res"
+                        android:layout_width="@dimen/size_chat_image_width"
+                        android:layout_height="@dimen/size_chat_image_height"
+                        android:scaleType="centerCrop" />
+
+                    <ProgressBar
+                        android:id="@+id/left_progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:id="@+id/reply_layout"
+                        android:layout_width="@dimen/size_reply_chat_image_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.rndtechnosoft.fynder.utility.RegularTextView
+                    android:id="@+id/left_text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginLeft="@dimen/space5"
+                    android:gravity="bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/colorTextInfo"
+                    android:textSize="@dimen/h5"  />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
